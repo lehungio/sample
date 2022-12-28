@@ -22,27 +22,21 @@ function App() {
     //   </div>
     // </Router>
 
-    <Router>
     <div className="App">
-      <h2>React Router Sample</h2>
-      <p>Click on the link for routing.</p>
-      <Link to='/'>Home </Link>
-      <Link to='/about'>About </Link>
-      <Link to='/contact'>Contact </Link>
-      <hr />
-      <Routes>
-      <Route path='/'>
-        <Home />
-      </Route>
-      <Route path='/about'>
-        <About />
-      </Route>
-      <Route path='/contact'>
-        <Contact />
-      </Route>
-      </Routes>
+      <Router>
+        <h2>React Router Sample</h2>
+        <p>Click on the link for routing.</p>
+        <Link to='/'>Home </Link>
+        {/* <Link to='/about'>About </Link> */}
+        {/* <Link to='/contact'>Contact </Link> */}
+        <hr />
+        <Routes>
+          <Route path='/'><Home /></Route>
+          {/* <Route path='/about'><About /></Route> */}
+          {/* <Route path='/contact'><Contact /></Route> */}
+        </Routes>
+      </Router>
     </div>
-    </Router>
   );
 }
 
